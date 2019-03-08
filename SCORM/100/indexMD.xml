@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<lom xmlns="http://ltsc.ieee.org/xsd/LOM"><general><identifier><catalog>ILIAS</catalog><entry>il_0_sco_100</entry></identifier><title><string language="de">Füllstand eines offenen Wassertanks</string></title><language>de</language><description><string language="de"/></description><keyword><string language="de"/></keyword></general><lifeCycle><version><string language="en"/></version><status><source>LOMv1.0</source><value>draft</value></status><contribute><role><source>LOMv1.0</source><value>author</value></role><entity/></contribute></lifeCycle></lom>

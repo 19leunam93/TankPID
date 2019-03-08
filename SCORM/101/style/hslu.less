@@ -1,0 +1,204 @@
+@import "../../../../templates/default/delos";
+// Import Custom Less Files here
+@import "hslu-variables.less";
+
+/* Use HSLU font */
+@font-face {
+	font-family: 'FS Albert Web Regular';
+	src:	url('@{web-font-path}FSAlbert/FSAlbertWeb-Regular.woff2') format('woff2'),
+			url('@{web-font-path}FSAlbert/FSAlbertWeb-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body, .tooltip, .popover {
+	font-family: "FS Albert Web Regular",Helvetica,sans-serif;
+}
+
+/* We need this to not make logout screen look squeezed */
+.ilStartupFrame {
+	margin-top: 2em;
+}
+
+/* The Logo needs to float as the Top-Bar is removed */
+#il_startup_logo {
+  float: left;
+}
+
+.ilTopTitle {
+  z-index: 1041;
+  position: relative;
+}
+
+.ilFixedTopSpacerBarOnly {
+  padding-top: 80px;
+}
+
+.navbar-brand img {
+  z-index: 1041;
+  position: relative;
+}
+
+div#ilTopBarNavContainer.ilMemberViewMainHeader {
+    background-color: lighten(@brand-warning, 62%);
+    z-index: 1045;
+}
+
+#ilTopBarNavContainer {
+  z-index: 1040;
+  position: relative;
+  top: -65px;
+}
+
+#ilTopNav {
+  margin-left: 210px;
+}
+
+#ilTopBarNav > li > a {
+   background-color: @brand-primary;
+}
+
+#ilTopBarNav > li > a:hover,
+#ilTopBarNav > li > a:active,
+#ilTopBarNav > li > a:focus, 
+#ilTopBarNav > .open > a,
+#ilTopBarNav > .open > a:hover,
+#ilTopBarNav > .open > a:active,
+#ilTopBarNav > .open > a:focus,
+#ilTopBarNav .dropdown-menu,
+#ilTopBarNav .dropdown-menu a:focus {
+  background-color: @brand-info;
+}
+
+#ilTopBarNav .dropdown-menu a:hover, #ilTopBarNav .dropdown-menu a:active, #ilTopBarNav .dropdown-menu a:focus {
+  color: #415e6c;
+}
+
+#ilTopNav .navbar-nav > li > a {
+	text-transform: none;
+}
+
+.ilMainHeader.ilTopFixed {
+	top: 0px;
+}
+
+.ilMainMenu.ilTopFixed {
+	top: 80px;
+}
+
+.ilFixedTopSpacer {
+	padding-top: 78px;
+}
+
+/* Change the bottom border of the header to create a clearer structure */
+.ilMainHeader {
+	border-bottom: 2px solid @brand-primary;
+}
+
+/* Doing this we can avoid the logo covering links in top-nav-bar */
+.ilMainHeader > header > .row > a.navbar-brand > img {
+  width: auto;
+}
+
+.ilMainHeader > header {
+	height: 80px;
+}
+
+ol.breadcrumb {
+	size: @font-size-small;
+	font-weight: normal;
+}
+
+#ilSubTab {
+	padding: 5px;
+	margin: -23px 15px 10px;
+	background: @il-secondary-container-bg;
+}
+
+#ilSubTab > li.active > a, #ilSubTab > li.active > a:hover, #ilSubTab > li.active > a:focus {
+	text-decoration: none;
+	color: @brand-secondary;
+}
+
+div.il_droparea:hover, div.ilCOPGDropActice, .il_droparea_valid_target {
+        background-color: lighten(@brand-secondary, 67%);
+}
+
+.dropdown-header {
+	background-color: #f0f0f0;
+	color: initial;
+	margin-top: 10px;
+}
+
+.warning, p.warning {
+	color: @brand-warning;
+}
+
+/* Fix for an issue with Bulletpoints and floats */
+.ilc_list_u_BulletedList, .ilc_list_o_NumberedList {
+	overflow: hidden;
+}
+
+/* Adapt a few things in the mobile view */
+@media only screen and (max-width: 767px) {
+  /* Adapt Logo-Display for HSLU */
+  div#il_startup_logo > img {
+    left: 45px;
+    background-color: white;
+    padding: 2px;
+    margin: 9px;
+    height: 20px; 
+    width: auto;
+  }
+  
+  .ilMainHeader > header > .row > a.navbar-brand > img {
+    display: none;
+  }
+
+  .ilMainHeader > header {
+    height: auto;
+  }
+
+  #ilTopNav button.navbar-toggle {
+    left: 0;
+  }
+
+  .ilFixedTopSpacer {
+  	padding-top: 0;
+  }
+  
+  .ilFixedTopSpacerBarOnly {
+    padding-top: 40px;
+  }
+  
+  .ilTopTitle {
+  	position: absolute;
+  	left: -40px;
+  }
+
+  .ilMainMenu.ilTopFixed {
+    top: -2px;
+  }
+
+  .ilMainHeader > header {
+    height: 40px;
+    background-color: white;
+  }
+
+  .ilMainHeader .container-fluid {
+    border-bottom: 2px solid @brand-primary;
+  }
+  
+  #ilTopBarNavContainer {
+    top: 0;
+    margin-left: 25px;
+  }
+
+  #ilTopNav {
+    margin-left: 0;
+  }
+
+  #ilTopNav #ilMainMenuEntries {
+    padding-top: 40px;
+  }
+}

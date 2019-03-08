@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	
+	<link rel="stylesheet" type="text/css" href="./css/container.css" media="" />
+	
+	<link rel="stylesheet" type="text/css" href="./content_style/content.css" media="" />
+	
+	<link rel="stylesheet" type="text/css" href="./style/hslu.css" media="" />
+	
+	<link rel="stylesheet" type="text/css" href="./css/test_javascript.css" media="" />
+	
+	<link rel="stylesheet" type="text/css" href="./libs/bower/bower_components/mediaelement/build/mediaelementplayer.min.css" media="" />
+	
+	<link rel="stylesheet" type="text/css" href="./Services/Accordion/css/accordion.css" media="" />
+	
+	<link rel="stylesheet" type="text/css" href="./libs/bower/bower_components/owl.carousel/dist/assets/owl.carousel.css" media="" />
+	
+	<link rel="stylesheet" type="text/css" href="./css/yahoo/container.css" media="" />
+	
+	<link rel="stylesheet" type="text/css" href="./css/question_handling.css" media="" />
+	
+	<link rel="stylesheet" type="text/css" href="../ilias_css_4_2/custom.css" media="" />
+	
+	
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	
+	<script type="text/javascript" src="./js/yahoo/yahoo-min.js"></script>
+	
+	<script type="text/javascript" src="./js/yahoo/yahoo-dom-event.js"></script>
+	
+	<script type="text/javascript" src="./js/yahoo/animation-min.js"></script>
+	
+	<script type="text/javascript" src="./js/yahoo/container-min.js"></script>
+	
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	
+	<script type="text/javascript" src="./js/Basic.js"></script>
+	
+	<script type="text/javascript" src="./js/jquery-ui-min.js"></script>
+	
+	<script type="text/javascript" src="./js/ilOverlay.js"></script>
+	
+	<script type="text/javascript" src="./js/ilCOPagePres.js"></script>
+	
+	<script type="text/javascript" src="./js/ilTooltip.js"></script>
+	
+	<script type="text/javascript" src="./js/maphilight.js"></script>
+	
+	<script type="text/javascript" src="./js/ilMatchingQuestion.js"></script>
+	
+	<script type="text/javascript" src="./js/ilExtLink.js"></script>
+	
+	<script type="text/javascript" src="./js/linkify.js"></script>
+	
+	<script type="text/javascript" src="./libs/bower/bower_components/mediaelement/build/mediaelement-and-player.min.js"></script>
+	
+	<script type="text/javascript" src="https://elearning.hslu.ch/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML&vers=4-4-3-2014-05-14"></script>
+	
+	<script type="text/javascript" src="./Services/Accordion/js/accordion.js"></script>
+	
+	<script type="text/javascript" src="./libs/bower/bower_components/owl.carousel/dist/owl.carousel.js"></script>
+	
+	<script type="text/javascript" src="./js/scorm.js"></script>
+	
+	<script type="text/javascript" src="./js/pager.js"></script>
+	
+	<script type="text/javascript" src="./js/pure.js"></script>
+	
+	<script type="text/javascript" src="./js/questions_137.js"></script>
+	
+	<script type="text/javascript">
+		il.Util.addOnLoad(function () {init(0);
+			
+			ilias.questions.txt.wrong_answers = "Anzahl Fehler";
+			ilias.questions.txt.wrong_answers_single = "Falsche Wahl.";
+			ilias.questions.txt.tries_remaining = "Verbleibende Versuche";
+			ilias.questions.txt.please_try_again = "Versuchen Sie es nochmals!";
+			ilias.questions.txt.all_answers_correct = "Richtig!";
+			ilias.questions.txt.enough_answers_correct = "Richtig, aber nicht die bestmögliche Lösung!";
+			ilias.questions.txt.nr_of_tries_exceeded = "Sie haben keine Versuche mehr.";
+			ilias.questions.txt.correct_answers_shown = "Richtige Lösung siehe oben.";
+			ilias.questions.txt.correct_answers_also = "Richtig sind auch:";
+			ilias.questions.txt.correct_answer_also = "Richtig ist auch:";
+			ilias.questions.txt.ov_all_correct = "Sie haben alle Fragen richtig beantwortet.";
+			ilias.questions.txt.ov_some_correct = "Sie haben [x] von [y] Frage(n) richtig beantwortet.";
+			ilias.questions.txt.ov_wrong_answered = "Die folgenden Fragen wurden noch nicht oder falsch beantwortet";
+			ilias.questions.txt.please_select = "Bitte auswählen";
+			ilias.questions.txt.ov_preview = "Die Fragenübersicht funktioniert nicht im Seiteneditor-Kontext. Benutzen Sie stattdessen die Vorschau auf SCO- oder SCORM-Level.";
+			ilias.questions.txt.submit_answers = "Auswerten";
+			ilias.questions.refresh_lang();
+			
+			il.COPagePres.updateQuestionOverviews();
+			});
+	</script>
+	<script src="./js/accordion.js" type="text/javascript" language="JavaScript1.2"></script>
+	<title>FlatTank Modell in aktion</title>
+</head>
+<body class="yui-skin-sam" onunload="finish();">
+
+<div class="ilc_page_tnav_TopNavigation">
+<div class="ilc_page_lnav_LeftNavigation">
+<a class="ilc_page_lnavlink_LeftNavigationLink">
+<img class="ilc_page_lnavimage_LeftNavigationImage" border="0" src="./images/spacer.png" alt="" title="" />&nbsp;Zurück</a>
+</div>
+<div class="ilc_page_rnav_RightNavigation">
+<a class="ilc_page_rnavlink_RightNavigationLink">Vor&nbsp;<img class="ilc_page_rnavimage_RightNavigationImage" border="0" src="./images/spacer.png" alt="" title="" /></a>
+</div>
+<div style="clear:both;"></div>
+</div>
+
+
+
+<div  class="ilc_page_cont_PageContainer">
+<div class="ilc_page_Page">
+
+
+ 
+<script LANGUAGE="JavaScript1.1">
+<!--
+focus();
+//-->
+</script>
+
+<a class="small" id="ilPageShowAdvContent" style="display:none; text-align:right;" href="#"><span>Vertiefungswissen anzeigen</span><span>Vertiefungswissen verbergen</span></a><h1 class="ilc_page_title_PageTitle">Modell in aktion</h1><!--COPage-PageTop--><div class="ilc_Paragraph ilc_text_block_Standard">
+
+	<div id="spinner">
+	    <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+	</div>
+	<div id='spinner-blur'>
+		<div id="i20pg" class="flexblocks-column-container c6480">
+			<div id="ivysh" class="flexblocks-item c6488">
+				<div></div>
+				<div id="ikz2k" class="flexblocks-row-container c6503">
+					<div id="ie7tc" class="flexblocks-item c6511">
+						<canvas id="aoTXOeixTNuD1MQKUlu5MA" class="c8688"></canvas>
+					</div>
+					<div id="iooko" class="flexblocks-item c6520">
+						<div id="fh7R0gfFQZW4janiwgHgbg" class="c14484"></div>
+					</div>
+				</div>
+			</div>
+			<div id="iwysb" class="flexblocks-item c6558">
+				<div id="idsth" class="flexblocks-row-container c6566">
+					<div id="in723" class="flexblocks-item c6583">
+						<label id="Ahe4ZpV7TaGLSIsCXw5hJA" class="c21149"></label>
+						<label id="M4JQqZe8SkiKBHu5YIZY3w" class="c21156"></label>
+						<label id="I8J5o1s2TdiMpwdP-cs2iw" class="c2315"></label>
+						<input type="range" id="J4bsj6x5QwSYBTATK8HkVg" class="c21862"/>
+
+						<label id="dWgH0WdYSYSsrXxCEaryNA" class="c861" style="display: none;"></label>
+						<label id="D9SE85uaT0-9lHmlg_2MYg" class="c37126" style="display: none;"></label>
+						<label id="ewbL0oQYTAySVDWo-I-9zQ" class="c2315" style="display: none;"></label>
+						<input type="range" id="VJYNofbkTtKxrrzyEf2SMw" class="c2868" style="display: none;"/>
+						<label id="d0ZaPeMmQ6mQP79LM4tBBw" class="c49688" style="display: none;"></label>
+						<label id="aupd8al2RdyLiOFxGiqujw" class="c2315" style="display: none;"></label>
+						<input type="range" id="WLjTgy7dTaOr6pTaxKPepQ" class="c6118" style="display: none;"/>
+						<label id="YsAJtJUCTmWoj6xKjFbFPw" class="c40970" style="display: none;"></label>
+						<label id="TMxQHzjUTNCYiOl-S63c8Q" class="c2315" style="display: none;"></label>
+						<input type="range" id="c6VZyY8gQyy2191LJRCyZg" class="c6245" style="display: none;"/>
+						<label id="QfgDqZgmTcS3fSIkPWoilQ" class="c40970" style="display: none;"></label>
+						<label id="SIiBpdIDQKiSjtvVu21eiA" class="c2315" style="display: none;"></label>
+						<input type="range" id="XnK3oBjxSPmUSr1B5Ta1sw" class="c6299" style="display: none;"/>
+					</div>
+				</div>
+			</div>
+		</div>
+	<div/>
+
+	<!--Break--></div><div xmlns:xhtml="http://www.w3.org/1999/xhtml" style="clear:both;"><!--Break--></div>
+
+
+</div></div>
+
+
+
+
+<div class="ilc_page_bnav_BottomNavigation">
+<div class="ilc_page_lnav_LeftNavigation">
+<a class="ilc_page_lnavlink_LeftNavigationLink">
+<img class="ilc_page_lnavimage_LeftNavigationImage" border="0" src="./images/spacer.png" alt="" title="" />&nbsp;Zurück</a>
+</div>
+<div class="ilc_page_rnav_RightNavigation">
+<a class="ilc_page_rnavlink_RightNavigationLink">Vor&nbsp;<img class="ilc_page_rnavimage_RightNavigationImage" border="0" src="./images/spacer.png" alt="" title="" /></a>
+</div>
+<div style="clear:both;"></div>
+</div>
+
+<style>
+      * { box-sizing: border-box; } body {margin: 0;}.flexblocks-row-container{display:flex;flex-direction:column;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;}.flexblocks-column-container{display:flex;flex-direction:row;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;}.flexblocks-item{min-height:300px;flex-basis:auto;flex-grow:1;}.c6511{flex-shrink:1;flex-grow:0;}.c6520{flex-grow:1;}.c6503{height:100%;}.c6583{flex-grow:1;flex-shrink:1;max-width: 78%;}.c6566{height:100%;}.c6488{height:100%;flex-grow:0;flex-shrink:0;flex-basis:60%;}.c6558{height:100%;flex-grow:0;flex-shrink:0;flex-basis:40%;}.c6480{height:100%;width:100%;overflow:visible;overflow-x:visible;overflow-y:visible;background-color:none;}.c8688{width:100%;}.c14484{min-height:200px;height:auto;top:0;right:0;left:0;bottom:0;max-width:autopx;border-radius:0 0 0 0;border:black black;perspective:0;}.c21149{font-weight:700;font-size:1.8em;display:block;line-height:2em;color:#000000;top:0;right:0;left:0;bottom:0;max-width:autopx;min-height:autopx;border-radius:0 0 0 0;border:black black;perspective:0;}.c21156{display:block;font-size:1.2em;color:#000000;top:0;right:0;left:0;bottom:0;max-width:autopx;min-height:autopx;border-radius:0 0 0 0;border:black black;perspective:0;}.c21862{width:100%;}.c861{display:block;font-size:1.8em;line-height:1.8em;font-weight:700;top:0;right:0;left:0;bottom:0;max-width:autopx;min-height:autopx;border-radius:0 0 0 0;border:black black;perspective:0;color:#000000;}.c2315{display:block;color:#000000;width:539px;top:0;right:0;left:0;bottom:0;max-width:autopx;min-height:autopx;border-radius:0 0 0 0;border:black black;perspective:0;}.c2868{width:100%;}.c6118{width:100%;}.c6245{width:100%;}.c6299{width:100%;}.c37126{width:250auto;font-size:1.2em;top:0;right:0;left:0;bottom:0;max-width:autopx;min-height:autopx;border-radius:0 0 0 0;border:black black;perspective:0;}.c40970{top:0;right:0;left:0;bottom:0;max-width:autopx;min-height:autopx;border-radius:0 0 0 0;border:black black;perspective:0;font-size:1.2em;}.c49688{font-size:1.2em;}
+      
+      
+    #spinner-blur {
+      filter: blur(10px);
+      transition: filter 0.3s ease-out;
+    }
+
+    #spinner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      background-color: rgba(255, 255, 255, 0.5);
+      transition: display 0.3s linear;
+    }
+
+    .lds-ring {
+      display: inline-block;
+      position: relative;
+      width: 2vw;
+      height: 2vh;
+      position: absolute;
+      left: 49vw;
+      top: 49vh;
+      z-index: 10;
+    }
+    .lds-ring div {
+      box-sizing: border-box;
+      display: block;
+      position: absolute;
+      width: 51px;
+      height: 51px;
+      margin: 6px;
+      border: 6px solid #00b2ff;
+      border-radius: 50%;
+      animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+      border-color: #00b2ff transparent transparent transparent;
+    }
+    .lds-ring div:nth-child(1) {
+      animation-delay: -0.45s;
+    }
+    .lds-ring div:nth-child(2) {
+      animation-delay: -0.3s;
+    }
+    .lds-ring div:nth-child(3) {
+      animation-delay: -0.15s;
+    }
+    @keyframes lds-ring {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  
+    </style>
+
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+<script src="js/TankSystem1_mod.js"></script>
+
+</body></html>

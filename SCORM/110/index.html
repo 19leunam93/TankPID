@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	
+	<link rel="stylesheet" type="text/css" href="./css/container.css" media="" />
+	
+	<link rel="stylesheet" type="text/css" href="./content_style/content.css" media="" />
+	
+	<link rel="stylesheet" type="text/css" href="./style/hslu.css" media="" />
+	
+	<link rel="stylesheet" type="text/css" href="./css/test_javascript.css" media="" />
+	
+	<link rel="stylesheet" type="text/css" href="./libs/bower/bower_components/mediaelement/build/mediaelementplayer.min.css" media="" />
+	
+	<link rel="stylesheet" type="text/css" href="./Services/Accordion/css/accordion.css" media="" />
+	
+	<link rel="stylesheet" type="text/css" href="./libs/bower/bower_components/owl.carousel/dist/assets/owl.carousel.css" media="" />
+	
+	<link rel="stylesheet" type="text/css" href="./css/yahoo/container.css" media="" />
+	
+	<link rel="stylesheet" type="text/css" href="./css/question_handling.css" media="" />
+	
+	<link rel="stylesheet" type="text/css" href="../ilias_css_4_2/custom.css" media="" />
+	
+	
+	<script type="text/javascript" src="./js/yahoo/yahoo-min.js"></script>
+	
+	<script type="text/javascript" src="./js/yahoo/yahoo-dom-event.js"></script>
+	
+	<script type="text/javascript" src="./js/yahoo/animation-min.js"></script>
+	
+	<script type="text/javascript" src="./js/yahoo/container-min.js"></script>
+	
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	
+	<script type="text/javascript" src="./js/Basic.js"></script>
+	
+	<script type="text/javascript" src="./js/jquery-ui-min.js"></script>
+	
+	<script type="text/javascript" src="./js/ilOverlay.js"></script>
+	
+	<script type="text/javascript" src="./js/ilCOPagePres.js"></script>
+	
+	<script type="text/javascript" src="./js/ilTooltip.js"></script>
+	
+	<script type="text/javascript" src="./js/maphilight.js"></script>
+	
+	<script type="text/javascript" src="./js/ilMatchingQuestion.js"></script>
+	
+	<script type="text/javascript" src="./js/ilExtLink.js"></script>
+	
+	<script type="text/javascript" src="./js/linkify.js"></script>
+	
+	<script type="text/javascript" src="./libs/bower/bower_components/mediaelement/build/mediaelement-and-player.min.js"></script>
+	
+	<script type="text/javascript" src="https://elearning.hslu.ch/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML&vers=4-4-3-2014-05-14"></script>
+	
+	<script type="text/javascript" src="./Services/Accordion/js/accordion.js"></script>
+	
+	<script type="text/javascript" src="./libs/bower/bower_components/owl.carousel/dist/owl.carousel.js"></script>
+	
+	<script type="text/javascript" src="./js/scorm.js"></script>
+	
+	<script type="text/javascript" src="./js/pager.js"></script>
+	
+	<script type="text/javascript" src="./js/pure.js"></script>
+	
+	<script type="text/javascript" src="./js/questions_110.js"></script>
+	
+	<script type="text/javascript">
+		il.Util.addOnLoad(function () {init(0);
+			
+			ilias.questions.txt.wrong_answers = "Anzahl Fehler";
+			ilias.questions.txt.wrong_answers_single = "Falsche Wahl.";
+			ilias.questions.txt.tries_remaining = "Verbleibende Versuche";
+			ilias.questions.txt.please_try_again = "Versuchen Sie es nochmals!";
+			ilias.questions.txt.all_answers_correct = "Richtig!";
+			ilias.questions.txt.enough_answers_correct = "Richtig, aber nicht die bestmögliche Lösung!";
+			ilias.questions.txt.nr_of_tries_exceeded = "Sie haben keine Versuche mehr.";
+			ilias.questions.txt.correct_answers_shown = "Richtige Lösung siehe oben.";
+			ilias.questions.txt.correct_answers_also = "Richtig sind auch:";
+			ilias.questions.txt.correct_answer_also = "Richtig ist auch:";
+			ilias.questions.txt.ov_all_correct = "Sie haben alle Fragen richtig beantwortet.";
+			ilias.questions.txt.ov_some_correct = "Sie haben [x] von [y] Frage(n) richtig beantwortet.";
+			ilias.questions.txt.ov_wrong_answered = "Die folgenden Fragen wurden noch nicht oder falsch beantwortet";
+			ilias.questions.txt.please_select = "Bitte auswählen";
+			ilias.questions.txt.ov_preview = "Die Fragenübersicht funktioniert nicht im Seiteneditor-Kontext. Benutzen Sie stattdessen die Vorschau auf SCO- oder SCORM-Level.";
+			ilias.questions.txt.submit_answers = "Auswerten";
+			ilias.questions.refresh_lang();
+			
+			il.COPagePres.updateQuestionOverviews();
+			});
+	</script>
+	<script src="./js/accordion.js" type="text/javascript" language="JavaScript1.2"></script>
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<title>Tankmodell</title>
+</head>
+<body class="yui-skin-sam" onunload="finish();">
+
+<div class="ilc_page_tnav_TopNavigation">
+<div class="ilc_page_lnav_LeftNavigation">
+<a class="ilc_page_lnavlink_LeftNavigationLink">
+<img class="ilc_page_lnavimage_LeftNavigationImage" border="0" src="./images/spacer.png" alt="" title="" />&nbsp;Zurück</a>
+</div>
+<div class="ilc_page_rnav_RightNavigation">
+<a class="ilc_page_rnavlink_RightNavigationLink">Vor&nbsp;<img class="ilc_page_rnavimage_RightNavigationImage" border="0" src="./images/spacer.png" alt="" title="" /></a>
+</div>
+<div style="clear:both;"></div>
+</div>
+
+
+
+<div  class="ilc_page_cont_PageContainer">
+<div class="ilc_page_Page">
+
+
+ 
+<script LANGUAGE="JavaScript1.1">
+<!--
+focus();
+//-->
+</script>
+
+<script>questions[400175]= {"id":400175,"type":"assKprimChoice","title":"Frage 2.1","question":"Welche Aussagen sind richtig?","instruction":"F\u00fcr jede Aussage muss entschieden werden: [zutreffend] oder [nicht zutreffend]","nr_of_tries":3,"shuffle":false,"feedback":{"onenotcorrect":"","allcorrect":""},"trueOptionLabel":"zutreffend","falseOptionLabel":"nicht zutreffend","num_allowed_failures":1,"answers":[{"answertext":"Der F\u00fcllstand nimmt exponentiell ab.","correctness":false,"order":0,"image":"","feedback":""},{"answertext":"Die F\u00fcllstandkurve ist abh\u00e4ngig vom Auslassquerschnitt. ","correctness":true,"order":1,"image":"","feedback":""},{"answertext":"Die Zeit bis der Tank leer ist, ist proportional zum Auslassquerschnitt.","correctness":false,"order":2,"image":"","feedback":""},{"answertext":"Aus der Follstandkurve kann man ablesen, dass der F\u00fcllstand nach einer gewissen Zeit wieder zunimmt.","correctness":false,"order":3,"image":"","feedback":""}],"mobs":[]};questions[400176]= {"id":400176,"type":"assClozeTest","title":"Frage 2.2","question":"Berechne die ben\u00f6tigte Zeit, um den Tank vollst\u00e4ndig zu entleeren. Wie ver\u00e4ndert sich die Zeit, wenn die Austrittsfl\u00e4che verdoppelt wird?","clozetext":"Mit \\(h_0 = 1 m\\):<br \/>\n\\(t_&#123;leer&#125;(A_&#123;aus&#125;=0.04)\\) = [gap]11.29[\/gap] \\(s\\)<br \/>\n\\(t_&#123;leer&#125;(A_&#123;aus&#125;=0.08)\\) = [gap]5.64[\/gap] \\(s\\)<br \/>\n<br \/>\nMit \\(h_0 = 1.5 m\\):<br \/>\n\\(t_&#123;leer&#125;(A_&#123;aus&#125;=0.04)\\) = [gap]13.83[\/gap] \\(s\\)<br \/>\n\\(t_&#123;leer&#125;(A_&#123;aus&#125;=0.08)\\) = [gap]6.91[\/gap] \\(s\\)","nr_of_tries":3,"shuffle":true,"feedback":{"onenotcorrect":"","allcorrect":""},"gaps":[{"shuffle":true,"type":"2","item":[{"points":"1","value":"11.29","order":"0","lowerbound":"11.1","upperbound":"11.5"}]},{"shuffle":true,"type":"2","item":[{"points":"1","value":"5.64","order":"0","lowerbound":"5.4","upperbound":"5.8"}]},{"shuffle":true,"type":"2","item":[{"points":"1","value":"13.83","order":"0","lowerbound":"13.6","upperbound":"14"}]},{"shuffle":true,"type":"2","item":[{"points":"1","value":"6.91","order":"0","lowerbound":"6.7","upperbound":"7.1"}]}],"mobs":[]};</script><a class="small" id="ilPageShowAdvContent" style="display:none; text-align:right;" href="#"><span>Vertiefungswissen anzeigen</span><span>Vertiefungswissen verbergen</span></a><h1 class="ilc_page_title_PageTitle">Fragen</h1><!--COPage-PageTop--><div class="ilc_Paragraph ilc_text_block_Standard">
+
+	<div>
+	<div class="col-sm-3">
+		<h4>Modell-Parameter</h4>
+		<br />
+		<form id="parameter-form">
+			<div>
+				<label for="h_0">\(h_0\)</label>
+			</div>
+			<div>
+				<input class="form-control" type="number" name="h_0" id="h_0" min="0" max="10" step="0.1" value="1">
+			</div>			
+			<div>
+				<label for="A_aus">\(A_&#123;aus&#125;\)</label>
+			</div>
+			
+			<input class="form-control" type="number" name="A_aus" id="A_aus" min="0" max="1" step="0.001" value="0.04">
+		</form>
+		<br />
+		<button class="btn btn-default" onclick="fuellstandmodell()">Neu berechnen</button>
+		<button class="btn btn-default" onclick="resetplot()">Reset Plot</button>
+	</div>
+	<div class="col-sm-9">
+		<br />
+		<div id="plot"></div>
+		<div style="text-align: center;">
+			<p><span id="t_leer">\(t_&#123;leer&#125;\)</span> = <span id="t_leer_val">0</span>\(s\)</p>
+		</div>
+	</div>
+</div>
+
+	<!--Break--></div><div class="ilc_Paragraph ilc_text_block_Standard">Oben ist ein Modell eines unendlich hohen offenen zylindrischen Wassertanks implementiert. Die Abmessungen des Tankes:<br/>\(A_&#123;zyl&#125; = 1 m^2\)<br/>Über das Eingabefeld kann der Füllstand zum Startzeitpunkt \(h_0 = h(t = 0 s)\) und die Austrittsfläche \(A_&#123;aus&#125;\) variiert werden. Mit der zuvor hergeleiteten Gleichung für den Füllstand abhängig der Zeit, wird rechts ein Plot erstellt mit der Füllstandkurve, aus welchem die Ergebnisse herausgelesen werden können.<!--Break--></div><div class="ilc_Paragraph ilc_text_block_Standard">\(h(t) = (\sqrt&#123;h_0&#125; - \frac&#123;A_&#123;aus&#125;&#125;&#123;A_&#123;zyl&#125;&#125; \cdot \frac&#123;1&#125;&#123;2&#125; \cdot t \cdot \sqrt&#123;2g&#125;)^2\)<!--Break--></div><div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="ilc_question_Standard">	 <form onsubmit='return false;'>
+
+
+
+<div id="container400175" class="ilc_question_KprimChoice">
+	<div class="question_head">
+		<div class="ilc_qtitle_Title question id@id">qtitle</div>
+		<p class="ilAssKprimInstruction instruction">qinstruction</p>
+	</div>
+	<div class="container-fluid ilc_answers ilAssKprimChoiceTable ilClearFloat">
+		<div class="row ilc_qanswer_Answer">
+			<div class="col-sm-1 optionLabel">zutreffend</div>
+			<div class="col-sm-1 optionLabel">nicht zutreffend</div>
+		</div>
+		<div class="row ilc_qanswer_Answer answers">
+			<div class="col-sm-1 kprimInput">
+				<input class="" type="radio" name="qtrueinputname" value="1" />
+			</div>
+			<div class="col-sm-1 kprimInput" width="15">
+				<input type="radio" name="qfalseinputname" value="0" />
+			</div>
+			<div class="col-sm-4"><span class="answertext">qanswertext</span></div>
+		</div>
+	</div>
+<div id="feedback400175" style="display:none"></div>
+<input type="button" class="ilc_qsubmit_Submit" id="button400175"  onclick="ilias.questions.checkAnswers(400175)" value="TXT_SUBMIT_ANSWERS" />
+</div>
+<script>
+(function(questionData){
+
+	ilias.questions.shuffle(questionData);
+
+	$('div#container'+questionData.id+' div.question_head').autoRender(questionData);
+
+	$('div#container'+questionData.id).render(questionData, {
+		'div.answers':
+		{
+			'answer <- answers':
+			{
+				'span.answertext': 'answer.answertext',
+				'div.kprimInput input@name': function(arg)
+				{
+					return 'kprim_choice_'+questionData.id+'_result_'+arg.context.answers[arg.pos].order;
+				}
+			}
+		}
+	});
+
+	
+})(questions[400175]);
+</script>
+
+
+
+
+
+
+
+
+
+
+</form>	</div><div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="ilc_question_Standard">	 <form onsubmit='return false;'>
+
+
+
+
+
+<div id="container400176" class="ilc_question_ClozeTest">
+<div class="ilc_qtitle_Title question">qtitle</div>	
+<div class="ilc_qanswer_Answer clozetext id@id ilClearFloat">qcloze</div>	
+<div id="feedback400176" style="display:none"></div>
+<input type="button" class="ilc_qsubmit_Submit" id="button400176"  onclick="ilias.questions.checkAnswers(400176)" value="TXT_SUBMIT_ANSWERS" />
+</div>
+<script>
+	function renderILQuestion400176()
+	{
+		jQuery('div#container400176').autoRender(questions[400176]);
+		ilias.questions.initClozeTest(400176);
+	}
+	renderILQuestion400176();
+</script>
+
+
+
+
+
+
+
+
+</form>	</div><div xmlns:xhtml="http://www.w3.org/1999/xhtml" style="clear:both;"><!--Break--></div>
+
+
+</div></div>
+
+
+
+
+<div class="ilc_page_bnav_BottomNavigation">
+<div class="ilc_page_lnav_LeftNavigation">
+<a class="ilc_page_lnavlink_LeftNavigationLink">
+<img class="ilc_page_lnavimage_LeftNavigationImage" border="0" src="./images/spacer.png" alt="" title="" />&nbsp;Zurück</a>
+</div>
+<div class="ilc_page_rnav_RightNavigation">
+<a class="ilc_page_rnavlink_RightNavigationLink">Vor&nbsp;<img class="ilc_page_rnavimage_RightNavigationImage" border="0" src="./images/spacer.png" alt="" title="" /></a>
+</div>
+<div style="clear:both;"></div>
+</div>
+
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function(event) { 
+	    fuellstandmodell();
+	});	
+</script>
+
+<script>
+	var h_num = 0;
+	function fuellstandequation (t,h_0,A_aus,A_zyl) {
+		h = Math.pow(Math.sqrt(h_0)-((A_aus/A_zyl)*0.5*t*Math.sqrt(2*9.81)),2);
+		return h;
+	}
+
+	function emptyequation (h_0,A_aus,A_zyl) {
+		t_leer = (A_zyl/A_aus)*Math.sqrt((2*h_0)/9.81);
+		return t_leer;
+	}
+
+	function fuellstandmodell () {
+		h_num = h_num + 1;
+		var h_0 = document.getElementById('h_0').value;
+		var A_aus = document.getElementById('A_aus').value;
+		var A_zyl = 1;
+		var t_end = emptyequation(h_0,A_aus,A_zyl);
+		var dt = 0.01;
+		var n_elem = Math.round((t_end+5)/dt);
+		var x_val = new Array(n_elem);
+		t = Array(n_elem).fill().map((e,i)=>i*dt);
+		x_val.fill(0);
+		x_val.forEach(function(val,i) {
+			x_val[i] = fuellstandequation(t[i],h_0,A_aus,A_zyl);		
+		});
+		t_min = t[x_val.indexOf(Math.min(...x_val))];
+
+		var trace_name = 'h' + h_num + '(t,h0=' + String(h_0) + ',A_aus=' + String(A_aus) + ')';
+
+		var layout = {
+			title: 'Füllstandkurve',
+			xaxis: {
+				title: 'Zeit [s]',
+			    zeroline: false
+			},
+			  	yaxis: {
+			    title: 'Füllstand [m]',
+			    zeroline: false,
+			    showline: false
+			},
+			legend: {
+				x: 0.3,
+			    y: 1,
+			    traceorder: 'normal',
+			    bgcolor: '#E2E2E2',
+			    bordercolor: '#FFFFFF',
+			    borderwidth: 2
+			},
+			margin: { t: 0 }
+		};
+
+		PLOT = document.getElementById('plot');
+		Plotly.plot( PLOT, [{
+		x: t,
+		y: x_val,
+		name: trace_name }], layout);
+
+		document.getElementById('t_leer_val').innerHTML = t_min;
+		//document.getElementById('t_leer').innerHTML = '\(t_&#123;'+String(h_num)+'leer&#125;\)';
+
+		MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	}
+
+	function resetplot () {
+		PLOT = document.getElementById('plot');
+		while(PLOT.data.length>0) {
+			Plotly.deleteTraces(PLOT, [0]);
+		}
+		h_num = 0;
+		document.getElementById('t_leer_val').innerHTML = 0;
+		//document.getElementById('t_leer').innerHTML = '\(t_&#123;leer&#125;\)';
+
+		MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	}
+</script>
+
+</body></html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	
+	<link rel="stylesheet" type="text/css" href="./css/container.css" media="" />
+	
+	<link rel="stylesheet" type="text/css" href="./content_style/content.css" media="" />
+	
+	<link rel="stylesheet" type="text/css" href="./style/hslu.css" media="" />
+	
+	<link rel="stylesheet" type="text/css" href="./css/test_javascript.css" media="" />
+	
+	<link rel="stylesheet" type="text/css" href="./libs/bower/bower_components/mediaelement/build/mediaelementplayer.min.css" media="" />
+	
+	<link rel="stylesheet" type="text/css" href="./Services/Accordion/css/accordion.css" media="" />
+	
+	<link rel="stylesheet" type="text/css" href="./libs/bower/bower_components/owl.carousel/dist/assets/owl.carousel.css" media="" />
+	
+	<link rel="stylesheet" type="text/css" href="./css/yahoo/container.css" media="" />
+	
+	<link rel="stylesheet" type="text/css" href="./css/question_handling.css" media="" />
+	
+	<link rel="stylesheet" type="text/css" href="../ilias_css_4_2/custom.css" media="" />
+	
+	
+	<script type="text/javascript" src="./js/yahoo/yahoo-min.js"></script>
+	
+	<script type="text/javascript" src="./js/yahoo/yahoo-dom-event.js"></script>
+	
+	<script type="text/javascript" src="./js/yahoo/animation-min.js"></script>
+	
+	<script type="text/javascript" src="./js/yahoo/container-min.js"></script>
+	
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	
+	<script type="text/javascript" src="./js/Basic.js"></script>
+	
+	<script type="text/javascript" src="./js/jquery-ui-min.js"></script>
+	
+	<script type="text/javascript" src="./js/ilOverlay.js"></script>
+	
+	<script type="text/javascript" src="./js/ilCOPagePres.js"></script>
+	
+	<script type="text/javascript" src="./js/ilTooltip.js"></script>
+	
+	<script type="text/javascript" src="./js/maphilight.js"></script>
+	
+	<script type="text/javascript" src="./js/ilMatchingQuestion.js"></script>
+	
+	<script type="text/javascript" src="./js/ilExtLink.js"></script>
+	
+	<script type="text/javascript" src="./js/linkify.js"></script>
+	
+	<script type="text/javascript" src="./libs/bower/bower_components/mediaelement/build/mediaelement-and-player.min.js"></script>
+	
+	<script type="text/javascript" src="https://elearning.hslu.ch/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML&vers=4-4-3-2014-05-14"></script>
+	
+	<script type="text/javascript" src="./Services/Accordion/js/accordion.js"></script>
+	
+	<script type="text/javascript" src="./libs/bower/bower_components/owl.carousel/dist/owl.carousel.js"></script>
+	
+	<script type="text/javascript" src="./js/scorm.js"></script>
+	
+	<script type="text/javascript" src="./js/pager.js"></script>
+	
+	<script type="text/javascript" src="./js/pure.js"></script>
+	
+	<script type="text/javascript" src="./js/questions_140.js"></script>
+	
+	<script type="text/javascript">
+		il.Util.addOnLoad(function () {init(0);
+			
+			ilias.questions.txt.wrong_answers = "Anzahl Fehler";
+			ilias.questions.txt.wrong_answers_single = "Falsche Wahl.";
+			ilias.questions.txt.tries_remaining = "Verbleibende Versuche";
+			ilias.questions.txt.please_try_again = "Versuchen Sie es nochmals!";
+			ilias.questions.txt.all_answers_correct = "Richtig!";
+			ilias.questions.txt.enough_answers_correct = "Richtig, aber nicht die bestmögliche Lösung!";
+			ilias.questions.txt.nr_of_tries_exceeded = "Sie haben keine Versuche mehr.";
+			ilias.questions.txt.correct_answers_shown = "Richtige Lösung siehe oben.";
+			ilias.questions.txt.correct_answers_also = "Richtig sind auch:";
+			ilias.questions.txt.correct_answer_also = "Richtig ist auch:";
+			ilias.questions.txt.ov_all_correct = "Sie haben alle Fragen richtig beantwortet.";
+			ilias.questions.txt.ov_some_correct = "Sie haben [x] von [y] Frage(n) richtig beantwortet.";
+			ilias.questions.txt.ov_wrong_answered = "Die folgenden Fragen wurden noch nicht oder falsch beantwortet";
+			ilias.questions.txt.please_select = "Bitte auswählen";
+			ilias.questions.txt.ov_preview = "Die Fragenübersicht funktioniert nicht im Seiteneditor-Kontext. Benutzen Sie stattdessen die Vorschau auf SCO- oder SCORM-Level.";
+			ilias.questions.txt.submit_answers = "Auswerten";
+			ilias.questions.refresh_lang();
+			
+			il.COPagePres.updateQuestionOverviews();
+			});
+	</script>
+	<script src="./js/accordion.js" type="text/javascript" language="JavaScript1.2"></script>
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<title>Parameteridentifikation</title>
+</head>
+<body class="yui-skin-sam" onunload="finish();">
+
+<div class="ilc_page_tnav_TopNavigation">
+<div class="ilc_page_lnav_LeftNavigation">
+<a class="ilc_page_lnavlink_LeftNavigationLink">
+<img class="ilc_page_lnavimage_LeftNavigationImage" border="0" src="./images/spacer.png" alt="" title="" />&nbsp;Zurück</a>
+</div>
+<div class="ilc_page_rnav_RightNavigation">
+<a class="ilc_page_rnavlink_RightNavigationLink">Vor&nbsp;<img class="ilc_page_rnavimage_RightNavigationImage" border="0" src="./images/spacer.png" alt="" title="" /></a>
+</div>
+<div style="clear:both;"></div>
+</div>
+
+
+
+<div  class="ilc_page_cont_PageContainer">
+<div class="ilc_page_Page">
+
+
+ 
+<script LANGUAGE="JavaScript1.1">
+<!--
+focus();
+//-->
+</script>
+
+<script>questions[400231]= {"id":400231,"type":"assSingleChoice","title":"Frage 4.1","question":"Stimmt die \u00dcbertragungsfunktion unseres linearisierten Systems mit dem gemessenen System \u00fcberein?","nr_of_tries":100,"shuffle":true,"feedback":{"onenotcorrect":"","allcorrect":""},"answers":[{"answertext":"Ja","html_id":"400231_0","points":1,"order":0,"image":"","feedback":""},{"answertext":"Nein","html_id":"400231_1","points":0,"order":1,"image":"","feedback":""}],"mobs":[]};</script><a class="small" id="ilPageShowAdvContent" style="display:none; text-align:right;" href="#"><span>Vertiefungswissen anzeigen</span><span>Vertiefungswissen verbergen</span></a><h1 class="ilc_page_title_PageTitle">Parameteridentifikation</h1><!--COPage-PageTop--><div class="ilc_Paragraph ilc_text_block_Standard">Lade das CSV-File mit den Resultaten der Systemantwort des Laborversuchs auf einen Einheitssprung hoch und lasse dir das Ergebnis als Plot darstellen<!--Break--></div><div class="ilc_Paragraph ilc_text_block_Standard">
+
+	<div>
+	<div class="col-sm-3">
+		<h4>Modell-Parameter</h4>
+		<br />
+		<form id="parameter-form">
+			<div>
+				<label for="h_0">Messresultate (txt-File)</label>
+			</div>
+			<div>
+				<input class="form-control" type="file" name="txt" id="txt">
+			</div>
+		</form>
+		<br />
+		<button class="btn btn-default" onclick="fileupload()">Ausgabe der Messresultate</button>
+		<button class="btn btn-default" onclick="resetplot()">Reset Plot</button>
+	</div>
+	<div class="col-sm-9">
+		<br />
+		<div id="plot"></div>
+		<div style="text-align: center;">
+			<p><span id="t_1">T_1</span> = <span id="t_1_val">0</span>s</p>
+			<p><span id="kps">K_PS</span> = <span id="kps_val">0</span>m</p>
+		</div>
+	</div>
+</div>
+
+	<!--Break--></div><div class="ilc_Paragraph ilc_text_block_Standard">Wir wissen, dass wir durch Parameteridentifikation aus einer Sprungantwort eines P-T1-Gliedes die Übertragungsfunktion ermitteln können<!--Break--></div><div align="center" style="clear:both;"><figure class="ilc_media_cont_MediaContainer" style="display:table;"><div class="ilc_Mob" style="width:448px;"><img xmlns:xhtml="http://www.w3.org/1999/xhtml" border="0" style="width:100%" src="./objects/il_0_mob_4268783/PT1_450_0.JPG?il_wac_token=8d5ab9115afd4ecc9a681b2d243310cf2105714f&il_wac_ttl=3&il_wac_ts=1549458604" width="448" height="152"/></div><figcaption style="&#10;&#9;&#9;&#9;&#9;&#9;display: table-caption; caption-side: bottom;&#10;&#9;&#9;&#9;&#9;"><div class="ilc_media_caption_MediaCaption"><a target="_blank" href="./objects/il_0_mob_4268783/fullscreen.html"><img border="0" align="right" src="images/enlarge.svg"/></a></div></figcaption></figure></div><div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="ilc_question_Standard">	 <form onsubmit='return false;'>
+
+<div id="container400231" class="ilc_question_SingleChoice">
+	<div class="ilc_qtitle_Title question id@id">qtitle</div>
+	<div class="ilc_answers answers answer-table">
+		<div class="ilc_qanswer_Answer">
+			<div><input type="radio" class="order@value html_id@id" value="0" name="answers400231" /></div>
+			<div><label for class="answertext html_id@for"></label></div>
+		</div>
+		<div class="clearfix"></div>
+	</div>	
+	<div id="feedback400231" style="display:none"></div>
+	<input type="button" class="ilc_qsubmit_Submit"  id="button400231" onclick="ilias.questions.checkAnswers(400231)" value="TXT_SUBMIT_ANSWERS" />
+</div>
+<script>
+	function renderILQuestion400231()
+	{
+		ilias.questions.shuffle(questions[400231]);
+		jQuery('div#container400231').autoRender(questions[400231]);
+		
+	}
+	renderILQuestion400231();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</form>	</div><div xmlns:xhtml="http://www.w3.org/1999/xhtml" style="clear:both;"><!--Break--></div>
+
+
+</div></div>
+
+
+
+
+<div class="ilc_page_bnav_BottomNavigation">
+<div class="ilc_page_lnav_LeftNavigation">
+<a class="ilc_page_lnavlink_LeftNavigationLink">
+<img class="ilc_page_lnavimage_LeftNavigationImage" border="0" src="./images/spacer.png" alt="" title="" />&nbsp;Zurück</a>
+</div>
+<div class="ilc_page_rnav_RightNavigation">
+<a class="ilc_page_rnavlink_RightNavigationLink">Vor&nbsp;<img class="ilc_page_rnavimage_RightNavigationImage" border="0" src="./images/spacer.png" alt="" title="" /></a>
+</div>
+<div style="clear:both;"></div>
+</div>
+
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function(event) { 
+		fileupload();
+	});	
+</script>
+
+<script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+
+<script>
+	var txt_num = 0;
+
+	function fileupload () {
+		if (txt_num == 0) {
+			PLOT = document.getElementById('plot');
+			Plotly.plot( PLOT, [{
+			x: 0,
+			y: 0,
+			name: 'initialize' }]);
+		};
+
+		PLOT = document.getElementById('plot');
+		while(PLOT.data.length>0) {
+			Plotly.deleteTraces(PLOT, [0]);
+		}
+		txt_num = 0;
+
+		txt_num = txt_num + 1;
+
+		path = document.getElementById('txt').files[0];
+		var string;
+		var reader = new FileReader();
+		reader.onload = function(e) {
+			string = reader.result;
+			var data = d3.csvParse(string);
+
+			filename = document.getElementById('txt').files[0].name;
+			x_val_name = Object.keys(data[0])[0];
+			y_val_name = Object.keys(data[0])[1];
+
+			var x_val = new Array();
+			var y_val = new Array();
+			data.forEach(function(val,i) {
+				x_val[i] = data[i].time;
+				y_val[i] = data[i].h;
+			});
+
+			var trace_name = 'File Nr.' + String(txt_num) + ' (' +  String(filename) + ')' ;
+
+			var layout = {
+				title: 'Messresultate',
+				xaxis: {
+					title: x_val_name + ' [s]',
+				    zeroline: false
+				},
+				  	yaxis: {
+				    title: y_val_name + ' [m]',
+				    zeroline: false,
+				    showline: false
+				},
+				legend: {
+					x: 0.7,
+				    y: 0.1,
+				    traceorder: 'normal',
+				    bgcolor: '#E2E2E2',
+				    bordercolor: '#FFFFFF',
+				    borderwidth: 2
+				},
+				margin: { t: 0 }
+			};
+
+			PLOT = document.getElementById('plot');
+			Plotly.plot( PLOT, [{
+			x: x_val,
+			y: y_val,
+			line: {width: 3},
+			name: trace_name }], layout);
+
+			// Plot a Line of the Setpoint
+			var y_setpoint = new Array(x_val.length);
+			y_setpoint.fill(y_val[x_val.length-1]);
+
+			PLOT = document.getElementById('plot');
+			Plotly.plot( PLOT, [{
+			x: x_val,
+			y: y_setpoint,
+			line: {width: 1},
+			name: 'Setpoint' }]);
+
+			// Plot the initial tangent
+			function linearfunction (y1, y2, dt, t) {
+				y = ((y2-y1)/dt)*t;
+				return y;
+			}
+
+			var t_end = (y_val[x_val.length-1])/((y_val[3]-y_val[1])/(x_val[3]-x_val[1]));
+
+			var t_closest = x_val.reduce(function(prev, curr) {
+			  return (Math.abs(curr - t_end) < Math.abs(prev - t_end) ? curr : prev);
+			});
+
+
+			var dt = 0.1;
+			var n_elem = Math.round((parseInt(t_closest, 10)+1)/dt);
+			x_tang = Array(n_elem).fill().map((e,i)=>i*dt);
+
+			var y_tang = new Array(x_tang.length);
+			y_tang.fill(0);
+
+
+			y_tang.forEach(function(val,i) {
+				y_tang[i] = linearfunction(y_val[1], y_val[3], x_val[3]-x_val[1], x_tang[i]);	
+			}); 
+
+			PLOT = document.getElementById('plot');
+			Plotly.plot( PLOT, [{
+			x: x_tang,
+			y: y_tang,
+			line: {width: 1},
+			name: 'Anfangstangente' }]);
+
+			document.getElementById('t_1_val').innerHTML = t_end;
+			document.getElementById('kps_val').innerHTML = y_val[x_val.length-1];
+		};
+		reader.readAsText(path);
+	};
+
+	function resetplot () {
+		PLOT = document.getElementById('plot');
+		while(PLOT.data.length>0) {
+			Plotly.deleteTraces(PLOT, [0]);
+		}
+		txt_num = 0;
+	}
+</script>
+
+
+</body></html>
